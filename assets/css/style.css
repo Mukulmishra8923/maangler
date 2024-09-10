@@ -20,6 +20,25 @@ opacity: 0px;
 box-shadow: 6px 6px 12px 0px #78CAED52;
 text-align: center;
 }
+.navbar {
+    position: relative; /* To position the close button relative to the navbar */
+}
+
+.close-btn {
+    position: absolute;
+    top: -8px;
+    right: 10px; /* Adjust this based on your layout */
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333; /* Customize color */
+}
+
+.close-btn:hover {
+    color: red; /* Hover effect */
+}
+
 
 .navParent{
     display: flex;
@@ -249,12 +268,21 @@ color: white;
     max-width: 786px;
 }
 .mentorCard .card{
-    border-image-slice: 1;
+    position: relative;
     background-color: black;
-    border-radius: 12px;
-    /* background: linear-gradient(180deg, rgb(131 155 35 / 0%) -94.9%, rgb(77 59 59 / 70%) 119.41%); */
-    border-image-source: radial-gradient(79.73% 79.78% at 5.58% 8.52%, #E3F6BC 0%, rgba(85, 161, 193, 0.5) 100%);
-    /* border: 2px solid ; */
+    border-radius: 20px;
+    padding: 20px;
+}
+.mentorCard .card::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    border-radius: 20px;
+    background: radial-gradient(79.73% 79.78% at 5.58% 8.52%, #E3F6BC 0%, rgba(85, 161, 193, 0.5) 100%);
+    z-index: -1;
 }
 .card:hover{
     transform: scale(1.1);
@@ -1003,8 +1031,13 @@ line-height: 44px;
 font-size: 16px;
 font-weight: 800;
 line-height: 20px;
+max-width: max-content;
 
 }
+.certificateBtn a:hover {
+    color: blue;
+}
+
 .frequentlySection {
     padding: 95px;
 }
@@ -1017,6 +1050,7 @@ margin: auto;
 }
 .accordion-item{
     max-width: 994px;
+    overflow: hidden;
     margin: 30px auto;
 }
 .accordion-button{
@@ -1034,6 +1068,14 @@ border-radius: 16px;
     color: white;
 
 }
+.accordionParent .accordion-flush>.accordion-item:first-child {
+    border-top: unset;
+    border: 1px solid yellow;
+}
+.accordionParent .accordion-flush>.accordion-item:last-child{
+    border-bottom: unset;
+    border: 1px solid yellow;
+}
 .accordion-header {
     background-color: black;
     border-radius: 30px 30px 30px 30px ;
@@ -1045,6 +1087,7 @@ border-radius: 16px;
 }
 .accordion-flush>.accordion-item {
 border: 1px solid yellow;
+background-color: black;
 border-radius: 30px 30px 30px 30px;
 }
 
@@ -1324,10 +1367,15 @@ padding: 16px;
     .toolSection {
         padding: 70px;
     }
+    
     .certificateBtn a {
         padding: 14px 50px;
        
     }
+    .certificateBtn a:hover {
+        color: blue;
+    }
+
     .certificateLeft {
         margin: auto;
         text-align: center;
@@ -1419,6 +1467,9 @@ padding: 16px;
         opacity: 0px;
         box-shadow: 6px 6px 12px 0px #78CAED52;
         text-align: center;
+    }
+    .close-btn {
+        top: -13px;
     }
     .heroRight .logo {
         padding: 10px;
@@ -1574,6 +1625,7 @@ padding: 16px;
         font-size: 16px;
         padding: 20px;
     }
+
     .app {
         max-width: 307px;
     }

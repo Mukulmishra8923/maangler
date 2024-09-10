@@ -1,3 +1,10 @@
+
+document.querySelector('.close-btn').addEventListener('click', function() {
+    document.querySelector('.navParent').style.display = 'none';
+});
+
+
+
 window.addEventListener('scroll', function() {
     var section = document.querySelector('.content');
     var progressBar = document.querySelector('.progress-bar');
