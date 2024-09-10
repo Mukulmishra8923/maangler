@@ -24,6 +24,7 @@ text-align: center;
 .navParent{
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .navbar h2 a{
@@ -154,9 +155,6 @@ margin-top: 32px;
 
 /* ---------------brandSection------------------------------------------- */
 
-.brandSection{
-
-}
 
 .brandSection p{
     color: #CECFD2;
@@ -406,6 +404,10 @@ padding-left: 60px;
 .learningCardParent .card-text{
     margin-bottom: 40px;
 } 
+.learningCardParent .card-text span{
+    background-color: #6e6e41;
+    ;
+}
 .learningSection{
     margin: 96px auto;
 }
@@ -536,6 +538,22 @@ right: 25px;
         background-color: #000000;
         /* Adjust the height as necessary */
     }
+    .moduleProgressBtn{
+        position: absolute;
+        top: 0;
+        left: 49%;
+        max-width: 50px;
+        z-index: 9999;
+
+    }
+    .moduleProgressBtn2{
+        position: absolute;
+        bottom: 0;
+        left: 49%;
+        max-width: 50px;
+        z-index: 9999;
+
+    }
     
 
 /* --------------------------------aiSection---------------------- */
@@ -599,6 +617,7 @@ line-height: 44px;
 letter-spacing: -0.02em;
 text-align: center;
 color: #FFFFFF;
+margin-bottom: 64px;
 }
 
 .toolCarousel .owl-item img {
@@ -635,7 +654,7 @@ color: #FFFFFF;
 }
 .communitySection{
    
-    padding: 96px auto;
+    margin: 96px auto;
 }
 .communityCard{
     display: flex;
@@ -673,7 +692,7 @@ color: #FFFFFF;
 }
 
 .workSection{
-    padding: 96px auto;
+    margin: 96px auto;
 }
 
 .workingLeft{
@@ -745,6 +764,9 @@ margin: auto;
 .meetupSection{
     margin: 96px auto;
 }
+.Bonus{
+    margin: 96px auto;
+}
 .rotation {
     transform: rotate(-10deg);
     text-align: center;
@@ -778,11 +800,11 @@ height: 50px;
 
 
 /* --------------------------bonusSection----------------------------- */
-
 .Bonus{
     margin: 96px auto;
     padding: 96px;
 }
+
 .bonusCard{
     max-width: 468px;
     background-color: red;
@@ -1194,13 +1216,20 @@ padding: 16px;
 
 
 
-
-
 @media (max-width: 1024px) {
    
+    .programSection, .learningSection, .careerHeading, .aiSection, .communitySection, .workSection, .endProgramSection, .meetupSection, .Bonus, .journeySection, .pricingSection, .certificateSection {
+        margin: 30px auto;
+    }
+    .frequentlySection{
+        padding: 30px 96px;
+    }
     .navbar {
         padding: 14px 170px 14px 170px;
         max-width: 550px;
+    }
+    .navParent{
+        padding-bottom: 0px;
     }
 
     .heroRow{
@@ -1271,6 +1300,9 @@ padding: 16px;
     }
     .programHeading h2 {
         font-size: 34px;     
+    }
+    .moduleProgressBtn, .moduleProgressBtn2{
+        left: 48%;
     }
 
     .moduleCard {
@@ -1437,6 +1469,9 @@ padding: 16px;
         gap: 30px;
        
     }
+    .moduleProgressBtn, .moduleProgressBtn2{
+        left: -2%;
+    }
     .workImgSize{
         max-width: 100%;
     }
@@ -1470,6 +1505,30 @@ padding: 16px;
     .progressButton {
         
         left: 0%;
+    }
+    .certificate h2 {
+       
+        font-size: 28px;
+    }
+    .communitySection h2 {
+        font-size: 28px;
+        
+    }
+    .aiSection h2 {
+        font-size: 28px;
+    }
+    .exclusive {
+        max-width: 947px;
+        margin: 40px auto;
+    }
+    .toolSection h2 {
+        font-size: 28px;
+    }
+    .programHeading h2 {
+        font-size: 28px;
+    }
+    .mentorHeading h2 {
+        font-size: 28px;
     }
 }
 
