@@ -1,0 +1,1539 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  
+    
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: #000000;
+}
+
+.navbar{
+    background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
+    max-width: 694px;
+padding: 14px 252px 14px 252px;
+gap: 10px;
+border-radius: 8px ;
+opacity: 0px;
+box-shadow: 6px 6px 12px 0px #78CAED52;
+text-align: center;
+}
+
+.navParent{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar h2 a{
+    font-family: Manrope;
+font-size: 20px;
+font-weight: 700;
+line-height: 20px;
+text-align: center;
+color: black;
+text-decoration: none;
+
+}
+.heroLeft{
+    max-width: 497px;
+}
+.heroPara{
+font-size: 18px;
+font-weight: 300;
+line-height: 30px;
+letter-spacing: 0.02em;
+text-align: left;
+color: #CECFD2;
+}
+.heroRight{
+    max-width: 466px;
+}
+.heroSection{
+    padding-top: 48px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.heroSection .row{
+    gap: 30px;
+}
+.heroSection h1{
+    color: #FFFFFF;
+}
+.heroSection p{
+    color: #CECFD2;
+    padding-top: 20px;
+}
+.DesignedBy{
+position: absolute;
+top: -23px;
+left: 20px;
+padding: 11px 24px;
+border-radius: 8px ;
+border: 0.5px ;
+color: #FFFFFF;
+background: linear-gradient(91.74deg, #8E8B4D 16.87%, #236B7A 93.38%);
+max-width: 140px;
+
+}
+.fangLogo{
+    display: flex;
+    gap: 20px;
+}
+.heroRight h5{
+    font-family: Manrope;
+font-size: 20px;
+font-weight: 700;
+line-height: 27.32px;
+text-align: center;
+color: #FFFFFF;
+padding-bottom: 20px;
+}
+.heroRight .logo{
+
+    padding: 30px;
+    border: 0.5px solid transparent;
+    margin-top: 44px;
+    position: relative;
+    border-image-slice: 1;
+    background: linear-gradient(180deg, rgb(131 155 35 / 0%) -94.9%, rgb(77 59 59 / 70%) 119.41%);
+    border-image-source: radial-gradient(79.73% 79.78% at 5.58% 8.52%, #E3F6BC 0%, rgba(85, 161, 193, 0.5) 100%);
+}
+.heroRight .heroImg{
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.applyBtn{
+
+  margin-top: 64px;
+
+
+}
+
+.applyBtn a{
+  
+    padding: 26px 180px 26px 180px;
+    min-width: 100%;
+    width: auto;
+    background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
+    border-radius: 8px;
+    color: #000000;
+font-family: Manrope;
+font-size: 20px;
+font-weight: 800;
+text-decoration: none;
+}
+.applyBtn a:hover{
+    
+    transform: scaleX(1.05);
+    transition: all 0.3s ease;
+   color: blue;
+}
+.imgSize{
+     max-width: 100%;
+}
+.discountLink{
+text-align: center;
+margin: 40px 0px 20px 0px
+}
+.discountLink a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.ondoardedText{
+text-align: center;
+color: #CECFD2;
+margin-top: 32px;
+}
+
+/* ---------------brandSection------------------------------------------- */
+
+.brandSection{
+
+}
+
+.brandSection p{
+    color: #CECFD2;
+}
+
+.brandsLogo {
+    max-width: 705px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.brandsLogo img:hover{
+    border: 2px;
+    background: linear-gradient(91.74deg, rgba(142, 139, 77, 0.8) 16.87%, rgba(35, 107, 122, 0.8) 93.38%);
+    transform: scale(1.03);
+}
+.brandsLogoParent{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 96px auto;
+}
+
+
+.applicationSection{
+ text-align: center;
+}
+.app{
+    display: flex;
+    max-width: 960px;
+    background: linear-gradient(91.74deg, rgba(142, 139, 77, 0.8) 16.87%, rgba(35, 107, 122, 0.8) 93.38%);
+    border-radius: 24px;
+    justify-content: space-around;
+    padding: 50px;
+    margin: 100px auto;
+}
+.applicationTab{
+    color: white;
+}
+.applicationTab .date{
+    font-family: Manrope;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49.18px;
+    text-align: left;
+    
+}
+.applicationTab p{
+    font-family: Manrope;
+font-size: 16px;
+font-weight: 500;
+line-height: 21.86px;
+text-align: center;
+
+}
+/* -----------------------------------mentorSection------------------------------------------ */
+
+.mentorText{
+    text-align: center;
+    padding-top: 48px;
+}
+.mentorHeading{
+    text-align: center;
+}
+.mentorHeading p{
+    font-family: Manrope;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+text-align: center;
+color: #DBDD9A;
+
+}
+.mentorHeading h2{
+    font-family: Manrope;
+font-size: 48px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: -0.02em;
+text-align: center;
+color: white;
+}
+.mentorCardParent{
+    display: flex;
+    justify-content: center;
+    padding: 64px ;
+}
+.mentorCard{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    max-width: 786px;
+}
+.mentorCard .card{
+    border-image-slice: 1;
+    background-color: black;
+    border-radius: 12px;
+    /* background: linear-gradient(180deg, rgb(131 155 35 / 0%) -94.9%, rgb(77 59 59 / 70%) 119.41%); */
+    border-image-source: radial-gradient(79.73% 79.78% at 5.58% 8.52%, #E3F6BC 0%, rgba(85, 161, 193, 0.5) 100%);
+    /* border: 2px solid ; */
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.mentorCard .card-body{
+    text-align: center;
+}
+.mentorCard .card-img-top {
+    padding: 30px;
+}
+.mentorCard .card-text{
+    color: white;
+    font-family: Manrope;
+font-size: 16px;
+font-weight: 600;
+line-height: 21.86px;
+letter-spacing: -0.02em;
+text-align: center;
+
+}
+.mentorCard .card-title{
+    color: #CECFD2;
+    font-family: Manrope;
+font-size: 21px;
+font-weight: 600;
+line-height: 28px;
+text-align: center;
+
+}
+.lineShadow{
+    width: 410px;
+height: 2px;
+gap: 0px;
+border: 1px solid red;
+/* opacity: 0px; */
+border: 1px solid;
+border-image-source: radial-gradient(53708.1% 53978519.56% at 50% 55.73%, rgba(112, 180, 200, 0.8) 0%, rgba(185, 248, 211, 0) 100%);
+border-image-slice: 1;
+margin: 30px auto;
+
+}
+
+
+
+/* -----------------------------programSection--------------------------------------- */
+
+.programSection{
+margin: 96px;
+}
+
+.programHeading p{
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: #DBDD9A;
+    
+}
+.programHeading h2{
+    font-family: Manrope;
+font-size: 48px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: -0.02em;
+text-align: center;
+color: white;
+}
+.programCard{
+ max-width: 486px;
+height: 179px;
+gap: 10px;
+border-radius: 12px;
+background-color: #23251f;
+}
+.programCard h5{
+    font-family: Manrope;
+font-size: 20px;
+font-weight: 700;
+line-height: 27.32px;
+text-align: left;
+color: white;
+padding-left: 60px;
+position: relative;
+padding-top: 30px;
+}
+
+.programCard h5::before{
+position: absolute;
+content: url(../image/star.svg);
+left: 15px;
+}
+
+.programCardParent{
+    max-width: 998px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.programCard p{
+    font-family: Manrope;
+font-size: 16px;
+font-weight: 500;
+line-height: 21.86px;
+text-align: left;
+color: #FFFFFF;
+padding-left: 60px;
+}
+.applybtnParent{
+    max-width: 479px;
+    text-align: center;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.pCard{
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+.btnParent{
+    display: flex;
+    justify-content: center;
+}
+
+.learningCardParent{
+    max-width: 1210px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+    justify-content: center;
+    margin: auto;
+}
+.learningCardParent .card{
+ background: #14181D;
+ border-radius: 16px;
+ padding: 20px;
+
+}
+.learningCardParent .card p{
+    color: #CECFD2;
+
+}
+.learningCardParent .card-text{
+    margin-bottom: 40px;
+} 
+.learningSection{
+    margin: 96px;
+}
+.aiSection{
+    margin: 96px;
+}
+
+.learnerName{
+    display: flex;
+    gap: 20px;
+}
+.learnerName h5{
+   color: #FFFFFF;
+}
+.learnerName p{
+ 
+    color: #94969C;
+}
+.learnerPara{
+    font-family: Manrope;
+font-size: 12px;
+font-weight: 400;
+line-height: 16.39px;
+color: #94969C;
+
+}
+.learningSection .programHeading{
+    margin-bottom: 79px;
+}
+
+.careerHeading{
+text-align: center;
+margin: 96px auto;
+}
+.careerHeading h2{
+    font-family: Manrope;
+    max-width: 864px;
+font-size: 32px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -0.02em;
+text-align: center;
+color: #FFFFFF;
+margin: 30px auto;
+}
+.careerHeading p{
+    color: #94969C;
+}
+.careerHeading .careerSmallPara{
+
+    margin: 32px auto;
+    max-width: 530px;
+
+}
+.careerPara{
+     margin: auto;
+    max-width: 998px;
+}
+
+.moduleCard{
+    max-width: 456px;
+    padding: 48px 30px;
+    border: 1px solid #3C464A;
+    border-radius: 24px;
+    position: relative;
+    margin: auto;
+}
+.moduleCard h3{
+color: #FFFFFF;
+margin-bottom: 25px;
+}
+.moduleCard li{
+    color: #FFFFFF;
+    font-family: Manrope;
+font-size: 18px;
+font-weight: 600;
+line-height: 24.59px;
+ }
+
+.moduleCard ul{
+ padding-left: 20px;
+    }  
+
+.moduleTab{
+    padding: 14px 40px;
+    border-radius: 8px ;
+    background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
+    max-width: 172px;
+    border: 1px solid;
+border-image-source: radial-gradient(79.73% 79.78% at 5.58% 8.52%, #E3F6BC 0%, rgba(85, 161, 193, 0.5) 100%) ;
+box-shadow: 6px 6px 12px 0px #78CAED40;
+position: absolute;
+top: -20px;
+right: 25px;
+    }
+
+  /* ----------------------------progressbar---------------------------------- */
+    
+    .content {
+        position: relative;
+    }
+    
+    .progress-bar2 {
+        position: absolute;
+        top: 0%;
+        right: 50%; 
+        height: 100%;
+        width: 2px; /* Narrow width for a vertical progress bar */
+        background-color:#3B3B3B; /* Change the color as needed */
+        /* display: none; */
+    }
+    
+    .progress-bar {
+        position: absolute;
+        top: 0%;
+        right: 50%; 
+        height: 100%;
+        width: 2px; /* Narrow width for a vertical progress bar */
+       
+        background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
+
+        z-index: 999;
+        display: none;
+    }
+    
+    .moduleSection {
+        padding: 20px;
+        background-color: #000000;
+        /* Adjust the height as necessary */
+    }
+    
+
+/* --------------------------------aiSection---------------------- */
+
+.aiSection h2{
+    font-family: Manrope;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 96px auto;
+    
+}
+
+.exclusive{
+    max-width: 947px;
+    margin: 72px auto;
+    padding: 56px;
+    background: linear-gradient(91.74deg, rgba(95, 111, 50, 0.8) 16.87%, rgba(21, 83, 87, 0.8) 93.38%);
+}
+.gptImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exclusive h3{
+    font-family: Manrope;
+font-size: 32px;
+margin-bottom: 32px;
+font-weight: 600;
+line-height: 37px;
+letter-spacing: -0.02em;
+text-align: left;
+color: #FFFFFF;
+
+}
+.exclusive li{
+    font-family: Manrope;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: -0.02em;
+text-align: left;
+color: #FFFFFF;
+margin-top: 12px;
+}
+
+.toolSection{
+    margin: 96px 0px;
+    padding: 90px;
+    background: linear-gradient(91.74deg, rgba(95, 111, 50, 0.8) 16.87%, rgba(21, 83, 87, 0.8) 93.38%);
+
+}
+.toolSection h2{
+    font-family: Manrope;
+font-size: 36px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: -0.02em;
+text-align: center;
+color: #FFFFFF;
+}
+
+.toolCarousel .owl-item img {
+    width: unset;
+}
+.toolSection .toolImg{
+    display: flex;
+    gap: 64px;
+    max-width: 936px;
+    margin: 64px auto;
+}
+
+.communitySection h2{
+    font-family: Manrope;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 768px;
+    margin: auto;
+
+    
+}
+.communitySection p{
+    color: #CECFD2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    max-width: 768px;
+    margin:20px auto 0px auto;
+}
+.communitySection{
+   
+    padding: 96px 0px;
+}
+.communityCard{
+    display: flex;
+    margin: auto;
+    padding: 73px;
+    gap: 30px;
+    justify-content: center;
+    background-image: url(/assets/image/waves.png);
+}
+
+.communityCard .card {
+    background-color: transparent;
+    border: 2px solid;
+    border-image-source: radial-gradient(circle at 5.58% 8.52%, #E3F6BC 0%, rgba(85, 161, 193, 0.5) 100%);
+    border-image-slice: 1;
+    border-radius: 12px;
+    padding: 60px 32px;
+    overflow: hidden; /* Ensure the border respects border-radius */
+    
+}
+
+
+
+.communityCard .cardData{
+    text-align: center;
+}
+
+.communityCard .card h5{
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.endProgramSection{
+    margin: 96px;
+}
+
+.workSection{
+    padding: 96px 0px;
+}
+
+.workingLeft{
+max-width: 564px;
+}
+.workingRight{
+    max-width: 592px;   
+}
+.workText{
+    display: flex;
+    gap: 16px;
+    max-width: 560px;
+}
+.workText h5 {
+    font-family: Manrope;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+color: white;
+}
+
+.workTextParent{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.workText p{
+    color: #CECFD2;
+}
+
+
+.workSection .mentorHeading{
+    margin-bottom: 64px;
+}
+.workSection .workImg{
+    margin: auto;
+}
+
+.endprogramCardParent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 70px auto 0px auto;
+}
+.endprogramCard{
+    max-width: 486px;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #23251f;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.endprogramCard p{
+    color: white;
+    margin: 0px;
+}
+
+.endProgramSection .programHeading{
+max-width: 768px;
+margin: auto;
+}
+.endProgramSection .programHeading .para{
+    color: #CECFD2;
+}
+
+/* ----------------------------meetupSection------------------- */
+.meetupSection{
+    margin: 96px;
+}
+.rotation {
+    transform: rotate(-10deg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Add this line */
+    z-index: -3;
+    margin-top: 250px;
+}
+
+.smallDiv{
+    width: 1000px;
+    height: 50px;
+    margin-top: 10px;
+    background: #ABEFC6;
+    
+}
+.bigDiv{
+    width: 1280px;
+height: 50px;
+/* transform: rotate(-10deg); */
+ background: #DBDD9A;
+}
+.meetupImg{
+    text-align: center;
+    margin-top: -250px;
+}
+.mee
+
+
+
+/* --------------------------bonusSection----------------------------- */
+
+.Bonus{
+    margin: 96px 0px;
+    padding: 96px;
+}
+.bonusCard{
+    max-width: 468px;
+    background-color: red;
+    background: linear-gradient(91.74deg, rgba(95, 111, 50, 0.8) 16.87%, rgba(21, 83, 87, 0.8) 93.38%);
+
+}
+.bonusCardParent{
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    margin-top: 72px;
+
+}
+.bonusCard{
+    padding: 32px;  
+}
+.bonusCard p{
+    color: white;
+    font-family: Manrope;
+font-size: 24px;
+font-weight: 700;
+line-height: 32.78px;
+text-align: left;
+
+  
+}
+.customCard{
+    width: 480px;
+    text-align: center;
+    border: 2px solid;
+
+border-image-source: radial-gradient(79.73% 79.78% at 5.58% 8.52%, #E3F6BC 0%, rgba(85, 161, 193, 0.5) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+
+}
+
+.number {
+    background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text; /* Standard property to clip the background to text */
+    color: transparent; /* Make the text color transparent to show the background */
+    font-size: 80px; /* Set a large font size for visibility */
+    font-weight: 700;
+    line-height: 96.82px;
+    margin: auto;
+}
+/* ----------------------------------journeySection--------------------------------------------- */
+.journeySection{
+    margin: 96px;
+}
+.content2 {
+    position: relative;
+}
+
+.pButton{
+position: relative;
+}
+.progressButton{
+    position: absolute;
+    left: 48%;
+    max-width: 50px;
+}
+.progressBar2 {
+    position: absolute;
+    top: 0%;
+    right: 50%; 
+    height: 100%;
+    width: 2px; /* Narrow width for a vertical progress bar */
+    background-color:#3B3B3B; /* Change the color as needed */
+    /* display: none; */
+}
+
+.progressBar {
+    position: absolute;
+    top: 0%;
+    right: 50%; 
+    height: 100%;
+    width: 2px; /* Narrow width for a vertical progress bar */
+   
+    background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
+
+    z-index: 999;
+    display: none;
+}
+
+.journeyCard{
+    max-width: 456px;
+    padding: 48px 30px;
+    /* border: 1px solid #3C464A; */
+    border-radius: 24px;
+    position: relative;
+    margin: auto;
+    text-align: end;
+}
+.journeyCard h3{
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    }
+    .journeyCard li{
+        color: #FFFFFF;
+        font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.59px;
+    list-style: none;
+     }
+
+     .journeySection   .programHeading{
+        max-width: 768px;
+        margin: auto;
+     }
+  .journeySection   .programHeading .para{
+    color: #CECFD2;
+    font-family: Manrope;
+font-size: 16px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+
+  }
+
+  /* ------------------------------pricingSection----------------------------------- */
+
+  .pricingSection{
+
+    margin: 96px;
+  }
+  .pricingSection .applybtnParent{
+    margin: auto;
+  }
+
+
+ 
+
+.price-select label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.price-select select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.price-select select:hover {
+    border-color: #66baff; /* Change border color on hover */
+}
+
+
+/* ----------------------------certificateSection--------------------------------------- */
+.certificateSection{
+    margin: 96px 0px;
+}
+.certificate{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1216px;
+    padding: 40px;
+    margin: 64px auto;
+    background: linear-gradient(91.74deg, rgba(95, 111, 50, 0.8) 16.87%, rgba(21, 83, 87, 0.8) 93.38%);
+}
+.certificateLeft{
+    max-width: 565px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+    margin: auto;
+}
+.certificateRight{
+    margin: auto;
+}
+.certificate h2{
+    color: white;
+    font-family: Manrope;
+font-size: 36px;
+font-weight: 600;
+line-height: 44px;
+
+}
+.certificateBtn a{
+    color: black;
+    text-decoration: none;
+    padding: 14px 97px;
+    border-radius: 8px;
+    background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
+    margin-top: 32px; 
+font-size: 16px;
+font-weight: 800;
+line-height: 20px;
+
+}
+.frequentlySection {
+    padding: 95px;
+}
+.frequentlySection .applybtnParent{
+margin: auto;
+}
+
+.accordionParent{
+    margin-top: 60px;
+}
+.accordion-item{
+    max-width: 994px;
+    margin: 30px auto;
+}
+.accordion-button{
+    background: linear-gradient(91.74deg, rgba(95, 111, 50, 0.8) 16.87%, rgba(21, 83, 87, 0.8) 93.38%);
+    color: white;
+font-size: 20px;
+font-weight: 500;
+line-height: 20px;
+border-radius: 16px;
+}
+.accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed {
+    background: linear-gradient(91.74deg, rgba(95, 111, 50, 0.8) 16.87%, rgba(21, 83, 87, 0.8) 93.38%);
+    border-radius: 30px 30px 30px 30px;
+    padding: 26px 24px;
+    color: white;
+
+}
+.accordion-header {
+    background-color: black;
+    border-radius: 30px 30px 30px 30px ;
+}
+.accordion-body {
+    padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
+    background: black;
+    color: rgb(255, 255, 255);
+}
+.accordion-flush>.accordion-item {
+border: 1px solid yellow;
+border-radius: 30px 30px 30px 30px;
+}
+
+.show{
+    border-radius: 30px 30px 0 0;
+}
+
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: url(/assets/image/accordionArrow.svg);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(/assets/image/accordionArrow.svg);
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+
+
+
+
+/* -----------------------pricingSection--------------------------------------- */
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    padding: 30px;
+}
+
+.dropdown-container {
+    width: 300px;
+    border: 2px solid transparent; /* Transparent border to allow border-image to show */
+    border-image-source: radial-gradient(79.73% 79.78% at 5.58% 8.52%, #E3F6BC 0%, rgba(85, 161, 193, 0.5) 100%);
+    border-image-slice: 1;
+
+    border-radius: 10px;
+    background-color: #000000; /* Dark background */
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    
+    /* Add this line */
+    box-shadow: 0 0 0 2px transparent;
+    background-clip: padding-box; /* Ensure background respects the border-radius */
+}
+
+
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    cursor: pointer;
+    background-color: #303030; /* Darker background for header */
+    border-radius: 10px;
+}
+
+.priceSelectParent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.price-select {
+    display: flex;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+.plan-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.plan-price {
+    font-size: 1.1em;
+}
+
+.dropdown-arrow {
+    font-size: 1.2em;
+}
+
+.dropdown-content,.dropdown-content1 ,.dropdown-content2 {
+    display: none; /* Initially hidden */
+    padding: 10px;
+    background-color: #1f1f1f;
+    border-top: 1px solid #ccc;
+}
+
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-content ul li {
+    padding: 5px 0;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.dropdown-content ul li::before {
+    content: "✔"; /* Checkmark symbol */
+    margin-right: 10px;
+    color: green;
+}
+.elite{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footerSection{
+    background-color: #1F1F1F;
+    margin: auto;
+    text-align: center;
+    padding: 64px;
+}
+
+
+.footerData{
+    max-width: 585px;
+    margin: auto;
+    text-align: center;
+}
+.footerData p {
+    font-family: Manrope;
+font-size: 12px;
+font-weight: 400;
+line-height: 22px;
+text-align: center;
+
+}
+.footerData h3{
+color: #fff;
+font-family: Manrope;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+
+}
+.footerData p{
+    color: #FFF;
+    margin-top: 24px;
+}
+.copyright{
+    font-family: Manrope;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color:#94969C;
+padding: 16px;
+
+}
+
+
+@media (max-width: 1280px) {
+    .workingRight {
+        max-width: 576px;
+    }
+
+    
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+   
+    .navbar {
+        background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
+        max-width: 550px;
+    }
+
+    .heroRow{
+        justify-content: center;
+    }
+    .toolSection .toolImg {
+        flex-wrap: wrap;
+      
+    }
+    .app {
+        
+        max-width: 600px;
+       
+        padding: 35px;
+        margin: 50px auto;
+    }
+    .applicationTab .date {
+      
+        font-size: 24px;
+    }
+    .card:hover{
+        transform: scale(1);
+        transition: all 0.3s ease;
+    }
+    .bonusCard {
+        padding: 15px;
+    }
+    .bonusCard p {
+        
+        font-size: 18px;
+        
+        text-align: center;
+    }
+    .mentorCard {
+       
+        justify-content: center;
+        gap: 30px;
+        max-width: unset;
+    }
+    .mentorHeading h2 {
+       
+        font-size: 35px;
+    }
+    .mentorCardParent {
+        padding: 40px;
+    }
+
+    .communityCard {
+        
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 30px;
+        margin-top: 10px;
+    }
+    .bigDiv {
+        width: 700px;
+    }
+    .smallDiv {
+        width: 630px;
+    }
+    .applyBtn a {
+        padding: 26px 100px 20px 100px;
+        font-size: 20px;
+    }
+    .programCardParent {
+       
+        justify-content: center;
+    }
+    .programHeading h2 {
+        font-size: 34px;     
+    }
+
+    .moduleCard {
+        max-width: 315px;
+        padding: 44px 11px 20px 17px;
+    }
+    .moduleCard li {
+        font-size: 16px;
+       
+    }
+    .moduleTab {
+        padding: 10px 30px;
+      
+    }
+    .communitySection h2 {
+        font-size: 35px;
+        max-width: 768px;
+    }
+    .toolSection {
+        padding: 70px;
+    }
+    .certificateBtn a {
+        padding: 14px 50px;
+       
+    }
+    .certificateLeft {
+        margin: auto;
+        text-align: center;
+    }
+    .certificateRight {
+        margin: 40px auto;
+    }
+    .bonusSection {
+        padding: 50px;
+    }
+    .progressButton {
+        position: absolute;
+        left: 47%;
+        max-width: 50px;
+        z-index: 2000;
+    }
+    .learningCardParent .card {
+        padding: 15px;
+    }
+    .learningCardParent .card-body {
+        padding: 5px 15px;
+    }
+    .learningCardParent .card-text {
+        margin-bottom: 25px;
+    }
+ 
+    .careerHeading h2 {
+      
+        max-width: 612px;
+        font-size: 28px;
+        margin: 30px auto;
+    }
+    .aiSection h2 {
+       
+        font-size: 34px;
+        max-width: 600px;
+        margin: auto;
+    }
+    .certificate {
+       
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1216px;
+        padding: 40px;
+        
+    }
+       .dropdown-header {
+        
+        padding: 20px;
+    }
+    .workText {
+        display: flex;
+        gap: 16px;
+        max-width: unset;
+    }
+    .workTextParent {
+        gap: 30px;
+    }
+    .workingLeft {
+        max-width: 100%;
+    }
+    .imgSize{
+        max-width: 80%;
+    }
+    .exclusive {
+        
+        padding: 20px;
+  
+    }
+    .exclusive h3 {
+        font-size: 28px;
+      
+    }
+    .workSection .row{
+        gap: 30px;
+    }
+
+
+}
+
+
+@media (max-width: 580px) {
+    .navbar {
+        
+        max-width: 504px;
+        padding: 14px 100px 14px 100px;
+        gap: 10px;
+        border-radius: 8px;
+        opacity: 0px;
+        box-shadow: 6px 6px 12px 0px #78CAED52;
+        text-align: center;
+    }
+    .heroRight .logo {
+        padding: 10px;
+    }
+    .lineShadow {
+        width: 250px;
+    }
+    .mentorCardParent {
+        padding: unset;
+    }
+    .app {
+        max-width: 403px;
+        padding: 35px;
+        flex-wrap: wrap;
+        margin: 50px auto;
+        gap: 37px;
+    }
+    .applicationTab .date {
+        font-size: 31px;
+    }
+    .exclusive .row{
+        gap: 30px;
+    }
+    .exclusive h3 {
+        font-size: 23px;
+    }
+    .bonusCardParent {
+        flex-wrap: wrap;
+        
+    }
+    .progress-bar {
+        position: absolute;
+        top: 0%;
+        height: 100%;
+        left: 0%;
+    }
+    .progress-bar2 {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+    .moduleSection .row{
+        margin-top: 50px;
+    }
+    .communityCard {
+       
+        padding: 15px;
+        gap: 30px;
+       
+    }
+    .workImgSize{
+        max-width: 100%;
+    }
+    .rotation {
+        
+        margin-top: 160px;
+    }
+   
+    .meetupImg {
+        margin-top: -160px;
+    }
+    .smallDiv {
+        width: 409px;
+    }
+    .bigDiv {
+        width: 412px;
+    }
+    .frequentlySection {
+        padding: 20px;
+    }
+    .progressBar {
+        top: 0%;
+        left: 5%;
+      
+    }
+    .progressBar2 {
+        position: absolute;
+        top: 0%;
+        left: 5%;
+    }
+    .progressButton {
+        
+        left: 0%;
+    }
+}
+
+
+@media (max-width: 375px) {
+
+    .navbar {
+        max-width: 504px;
+        padding: 14px 60px 14px 60px;
+    }
+    .heroRight .logo {
+        padding: 0px;
+    }
+    .fangLogo {
+        display: flex;
+        gap: 10px;
+    }
+    .bigDiv {
+        width: 350px;
+    }
+    .smallDiv {
+        width: 330px;
+    }
+    .rotation {
+        margin-top: 90px;
+    }
+    .meetupImg {
+        margin-top: -138px;
+    }
+    .bonusCard p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .programHeading h2 {
+        font-size: 28px;
+    }
+    .certificate h2 {
+       
+        font-size: 21px;
+    }
+    .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed {
+      
+        font-size: 16px;
+        padding: 20px;
+    }
+    .app {
+        max-width: 307px;
+    }
+    .aiSection h2 {
+        font-size: 24px;
+    }
+    .communitySection h2 {
+        font-size: 24px;
+        
+    }
+    .mentorHeading h2 {
+        font-size: 24px;
+    }
+    .workText h5 {
+        font-family: Manrope;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px;
+        color: white;
+    }
+    .applyBtn a {
+        padding: 15px 70px 15px 70px;
+        font-size: 20px;
+    }
+}
