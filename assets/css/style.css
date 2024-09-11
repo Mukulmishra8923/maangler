@@ -862,9 +862,10 @@ text-align: left;
 .customCard{
     width: 480px;
     text-align: center;
-    border: 2px solid;
+    border: 2px solid green;
+    border-radius: 12px;
 
-border-image-source: radial-gradient(79.73% 79.78% at 5.58% 8.52%, #E3F6BC 0%, rgba(85, 161, 193, 0.5) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+/* border-image-source: radial-gradient(79.73% 79.78% at 5.58% 8.52%, #E3F6BC 0%, rgba(85, 161, 193, 0.5) 100%)  */
 
 
 }
@@ -894,6 +895,7 @@ position: relative;
     position: absolute;
     left: 48%;
     max-width: 50px;
+    z-index: 2000;
 }
 .progressBar2 {
     position: absolute;
@@ -1123,9 +1125,10 @@ border-radius: 30px 30px 30px 30px;
 
 .dropdown-container {
     width: 300px;
-    border: 2px solid transparent; /* Transparent border to allow border-image to show */
-    border-image-source: radial-gradient(79.73% 79.78% at 5.58% 8.52%, #E3F6BC 0%, rgba(85, 161, 193, 0.5) 100%);
-    border-image-slice: 1;
+    border: 2px solid #a2dea2; /* Transparent border to allow border-image to show */
+    /* border-image-source: radial-gradient(79.73% 79.78% at 5.58% 8.52%, #E3F6BC 0%, rgba(85, 161, 193, 0.5) 100%); */
+    /* border-image-slice: 1; */
+    
 
     border-radius: 10px;
     background-color: #000000; /* Dark background */
@@ -1247,6 +1250,12 @@ padding: 16px;
 
 }
 
+@media (max-width: 1310px) {
+    .bigDiv{
+        max-width: 100%;
+    }
+}
+
 
 @media (max-width: 1280px) {
     .workingRight {
@@ -1255,7 +1264,26 @@ padding: 16px;
 
     
 }
-
+@media (max-width: 1200px) {
+    .heroSection .row {
+        gap: 30px;
+        justify-content: center;
+    }
+    .programCardParent {
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .workSection .row{
+        justify-content: center;
+        gap: 50px;
+    }
+    .imgSize{
+        max-width: 100%;
+    }
+}
 
 
 
@@ -1315,9 +1343,10 @@ padding: 16px;
     .mentorHeading h2 {
        
         font-size: 35px;
+        margin-bottom: 40px;
     }
     .mentorCardParent {
-        padding: 40px;
+        padding: 4px;
     }
 
     .communityCard {
@@ -1328,10 +1357,11 @@ padding: 16px;
         margin-top: 10px;
     }
     .bigDiv {
-        width: 700px;
+        max-width: 100%;
     }
     .smallDiv {
-        width: 630px;
+        max-width: 90%;
+        
     }
     .applyBtn a {
         padding: 26px 100px 20px 100px;
@@ -1457,6 +1487,22 @@ padding: 16px;
 }
 
 
+@media (max-width: 767px) {
+    .rotation {
+        margin-top: 170px;
+    }
+    .meetupImg {
+        margin-top: -190px;
+    }
+    .workImgSize{
+        max-width: 100%;
+    }
+
+
+
+}
+
+
 @media (max-width: 580px) {
     .navbar {
         
@@ -1476,6 +1522,12 @@ padding: 16px;
     }
     .lineShadow {
         width: 250px;
+    }
+    .heroRight .heroImg {
+        text-align: center;
+    }
+    .applyBtn{
+        text-align: center;
     }
     .mentorCardParent {
         padding: unset;
@@ -1537,9 +1589,7 @@ padding: 16px;
     .smallDiv {
         width: 409px;
     }
-    .bigDiv {
-        width: 412px;
-    }
+    
     .frequentlySection {
         padding: 20px;
     }
@@ -1581,11 +1631,64 @@ padding: 16px;
     .mentorHeading h2 {
         font-size: 28px;
     }
+    .heroRight h5 {
+   
+        font-size: 17px;
+        padding: 20px 0px;
+    }
+    
+    .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed {
+        font-size: 16px;
+    }
+
+
 }
 
 
-@media (max-width: 375px) {
 
+
+@media (max-width: 430px) {
+    .navbar {
+       
+        padding: 14px 80px 14px 80px;
+        gap: 10px;
+    }
+    .navbar h2 a {
+        font-family: Manrope;
+        font-size: 18px;
+    }
+    .app {
+    max-width: 330px;
+}
+.footerSection {
+    padding: 30px 10px;
+}
+.applyBtn a {
+    padding: 20px 80px 20px 80px;
+    font-size: 19px;
+}
+.imgSize2{
+    max-width: 100%;
+}
+.toolSection {
+    padding: 50px 64px;
+}
+.toolSection {
+    margin: 50px auto;
+}
+.fangLogo {
+      flex-wrap: wrap;
+}
+
+
+}
+
+@media (max-width: 375px) {
+    .fangLogo {
+      
+        gap: 5px;
+    }
+   
     .navbar {
         max-width: 504px;
         padding: 14px 60px 14px 60px;
@@ -1597,12 +1700,10 @@ padding: 16px;
         display: flex;
         gap: 10px;
     }
-    .bigDiv {
-        width: 350px;
+    .smallDiv{
+        max-width: 90%;
     }
-    .smallDiv {
-        width: 330px;
-    }
+  
     .rotation {
         margin-top: 90px;
     }
@@ -1639,6 +1740,7 @@ padding: 16px;
     .mentorHeading h2 {
         font-size: 24px;
     }
+    
     .workText h5 {
         font-family: Manrope;
         font-size: 18px;
