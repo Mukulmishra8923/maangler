@@ -33,6 +33,9 @@ window.addEventListener('scroll', function() {
 
 
 
+
+// --------------------------------------------JOURNEY -Scroll---------------------------------
+
 window.addEventListener('scroll', function() {
     var section = document.querySelector('.content2');
     var progressBar = document.querySelector('.progressBar');
@@ -57,6 +60,7 @@ window.addEventListener('scroll', function() {
         progressBar.style.display = 'none'; // Hide the progress bar if outside the section
     }
 });
+
 
 function toggleDropdown() {
     var content = document.getElementById("dropdown-content");
