@@ -153,7 +153,7 @@ text-decoration: none;
     
     transform: scaleX(1.05);
     transition: all 0.3s ease;
-   color: blue;
+   color: white;
 }
 .imgSize{
      max-width: 100%;
@@ -186,9 +186,13 @@ margin-top: 32px;
     flex-wrap: wrap;
     justify-content: center;
 }
+.brandsLogo img{
+    border: 1px solid white;
+    border-radius: 12px;
+}
 .brandsLogo img:hover{
-    border: 2px;
-    background: linear-gradient(91.74deg, rgba(142, 139, 77, 0.8) 16.87%, rgba(35, 107, 122, 0.8) 93.38%);
+    border: 1px;
+   
     transform: scale(1.03);
 }
 .brandsLogoParent{
@@ -201,7 +205,7 @@ margin-top: 32px;
 .applicationSection{
  text-align: center;
 }
-.app{
+.app {
     display: flex;
     max-width: 960px;
     background: linear-gradient(91.74deg, rgba(142, 139, 77, 0.8) 16.87%, rgba(35, 107, 122, 0.8) 93.38%);
@@ -209,10 +213,30 @@ margin-top: 32px;
     justify-content: space-around;
     padding: 50px;
     margin: 100px auto;
+    opacity: 0; /* Start hidden */
+    transform: translateY(100px); /* Start further down for smoother motion */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Increased duration and smoother timing */
 }
-.applicationTab{
+
+
+.applicationTab {
     color: white;
+    opacity: 0; /* Start hidden */
+    transform: translateY(100px); /* Start further down for smoother motion */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Increased duration and smoother timing */
 }
+
+/* Add animate class for triggering the animation */
+.app.animate {
+    opacity: 1;
+    transform: translateY(0); /* Smoothly slide into position */
+}
+
+.applicationTab.animate {
+    opacity: 1;
+    transform: translateY(0); /* Smoothly slide into position */
+}
+
 .applicationTab .date{
     font-family: Manrope;
     font-size: 36px;
@@ -333,67 +357,77 @@ margin: 30px auto;
 .programSection{
 margin: 96px auto;
 }
+.programCard {
+    max-width: 486px;
+    height: 179px;
+    gap: 10px;
+    border-radius: 12px;
+    background-color: #23251f;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start slightly off-screen */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
+}
 
-.programHeading p{
+.programCard.show {
+    opacity: 1; /* Visible on scroll */
+    transform: translateY(0); /* Move into position */
+}
+
+.programHeading p {
     font-family: Manrope;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     text-align: center;
     color: #DBDD9A;
-    
-}
-.programHeading h2{
-    font-family: Manrope;
-font-size: 48px;
-font-weight: 700;
-line-height: 44px;
-letter-spacing: -0.02em;
-text-align: center;
-color: white;
-}
-.programCard{
- max-width: 486px;
-height: 179px;
-gap: 10px;
-border-radius: 12px;
-background-color: #23251f;
-}
-.programCard h5{
-    font-family: Manrope;
-font-size: 20px;
-font-weight: 700;
-line-height: 27.32px;
-text-align: left;
-color: white;
-padding-left: 60px;
-position: relative;
-padding-top: 30px;
 }
 
-.programCard h5::before{
-position: absolute;
-content: url(../image/star.svg);
-left: 15px;
+.programHeading h2 {
+    font-family: Manrope;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: white;
 }
 
-.programCardParent{
+.programCard h5 {
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.32px;
+    text-align: left;
+    color: white;
+    padding-left: 60px;
+    position: relative;
+    padding-top: 30px;
+}
+
+.programCard h5::before {
+    position: absolute;
+    content: url(../image/star.svg);
+    left: 15px;
+}
+
+.programCardParent {
     max-width: 998px;
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
 }
 
-.programCard p{
+.programCard p {
     font-family: Manrope;
-font-size: 16px;
-font-weight: 500;
-line-height: 21.86px;
-text-align: left;
-color: #FFFFFF;
-padding-left: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+    text-align: left;
+    color: #FFFFFF;
+    padding-left: 60px;
 }
-.applybtnParent{
+
+.applybtnParent {
     max-width: 479px;
     text-align: center;
     margin-top: 32px;
@@ -411,6 +445,7 @@ padding-left: 60px;
     justify-content: center;
 }
 
+/* -------------------------learningSection---------------------------- */
 .learningCardParent{
     max-width: 1210px;
     display: flex;
@@ -439,9 +474,6 @@ padding-left: 60px;
 .learningSection{
     margin: 96px auto;
 }
-.aiSection{
-    margin: 96px auto;
-}
 
 .learnerName{
     display: flex;
@@ -464,6 +496,11 @@ color: #94969C;
 }
 .learningSection .programHeading{
     margin-bottom: 79px;
+}
+
+/* ----------------------careerSection------------------------------ */
+.aiSection{
+    margin: 96px auto;
 }
 
 .careerHeading{
@@ -692,7 +729,7 @@ margin-bottom: 64px;
     padding: 73px;
     gap: 30px;
     justify-content: center;
-    background-image: url(/assets/image/waves.png);
+    background-image: url(assets/image/waves.png);
 }
 
 .communityCard .card {
@@ -891,7 +928,7 @@ text-align: left;
     margin-top: 60px;
 }
 .content2Parent{
-    position: relative;
+    /* position: relative; */
 }
 
 
@@ -1057,7 +1094,9 @@ max-width: max-content;
 .frequentlySection .applybtnParent{
 margin: auto;
 }
-
+.accordion-button:focus {
+    box-shadow: none;
+}
 .accordionParent{
     margin-top: 60px;
 }
@@ -1260,6 +1299,79 @@ color:#94969C;
 padding: 16px;
 
 }
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glow-on-hover:before {
+    content: '';
+    /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
+    background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
+    /* background-image: linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%); */
+
+    
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:hover {
+    color: #ffffff;
+    background: black;
+}
+
+.glow-on-hover:hover:after {
+    background: black;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+/* ------------------responsive css-------------------------- */
+
 
 @media (max-width: 1399px) {
     .workingRight {
@@ -1826,3 +1938,23 @@ padding: 16px;
         padding: unset;
     }
 }
+
+.newBtn{
+    height: 100px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* ---------------------------------testing BUtton scc--------------- */
+
+/* ---------------------------2ns btn--------------------- */
+
+/* ---------------------3rd----------------------------------- */
+
+/* Staggered animation delay for individual tabs is applied dynamically in JavaScript */

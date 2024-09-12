@@ -1,4 +1,7 @@
 
+AOS.init();
+
+
 document.querySelector('.close-btn').addEventListener('click', function() {
     document.querySelector('.navParent').style.display = 'none';
 });
@@ -109,3 +112,45 @@ $('.toolCarousel').owlCarousel({
         }
     }
 })
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const appSection = document.querySelector('.app');
+    const applicationTabs = document.querySelectorAll('.applicationTab');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the animation class when the element is in view
+                appSection.classList.add('animate');
+                applicationTabs.forEach((tab, index) => {
+                    tab.style.animationDelay = `${0.9 + index * 0.9}s`;
+                    tab.classList.add('animate');
+                });
+                observer.unobserve(entry.target); // Stop observing once the animation has been triggered
+            }
+        });
+    }, { threshold: 0.2 }); // 20% of the section must be in view
+
+    observer.observe(appSection);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.querySelectorAll('.programCard');
+
+    function checkVisibility() {
+        const triggerBottom = window.innerHeight * 0.8;
+
+        cards.forEach(card => {
+            const cardTop = card.getBoundingClientRect().top;
+
+            if (cardTop < triggerBottom) {
+                card.classList.add('show');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Run on page load in case cards are already visible
+});
+
