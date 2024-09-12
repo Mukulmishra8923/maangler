@@ -888,7 +888,13 @@ text-align: left;
 }
 .content2 {
     position: relative;
+    margin-top: 60px;
 }
+.content2Parent{
+    position: relative;
+}
+
+
 
 .pButton{
 position: relative;
@@ -923,6 +929,7 @@ position: relative;
     display: none;
 }
 
+
 .journeyCard{
     max-width: 456px;
     padding: 48px 30px;
@@ -931,6 +938,7 @@ position: relative;
     position: relative;
     margin: auto;
     text-align: end;
+    padding-top: 0px;
 }
 .journeyCard h3{
     color: #FFFFFF;
@@ -1253,6 +1261,11 @@ padding: 16px;
 
 }
 
+@media (max-width: 1399px) {
+    .workingRight {
+        max-width: 540px;
+    }
+}
 @media (max-width: 1310px) {
     .bigDiv{
         max-width: 100%;
@@ -1383,7 +1396,7 @@ padding: 16px;
   
 
     .moduleCard {
-        max-width: 315px;
+        max-width: unset;
         padding: 44px 11px 20px 17px;
     }
     .moduleCard li {
@@ -1512,7 +1525,8 @@ padding: 16px;
         left: 0%;
     }
     .moduleSection .row{
-        gap: 20px;
+        /* gap: 20px; */
+        padding-top: 30px;
     }
     .progress-bar2 {
        
@@ -1552,6 +1566,9 @@ padding: 16px;
         max-width: 50px;
         z-index: 2000;
     }
+    .lastbtn{
+        left: 2%;
+        }
 
 
 
@@ -1607,20 +1624,13 @@ padding: 16px;
         flex-wrap: wrap;
         
     }
-    .progress-bar {
-        position: absolute;
-        top: 0%;
-        height: 100%;
-        left: 0%;
-    }
-    .progress-bar2 {
-        position: absolute;
-        top: 0%;
-        left: 0%;
-    }
+    
     .moduleSection .row{
         margin-top: 50px;
-        gap: unset;
+        /* gap: unset; */
+    }
+    .moduleCard{
+        max-width: 85%;
     }
     .communityCard {
        
@@ -1628,9 +1638,7 @@ padding: 16px;
         gap: 30px;
        
     }
-    .moduleProgressBtn, .moduleProgressBtn2{
-        left: -2%;
-    }
+   
     .workImgSize{
         max-width: 100%;
     }
@@ -1649,20 +1657,7 @@ padding: 16px;
     .frequentlySection {
         padding: 20px;
     }
-    .progressBar {
-        top: 0%;
-        left: 5%;
-      
-    }
-    .progressBar2 {
-        position: absolute;
-        top: 0%;
-        left: 5%;
-    }
-    .progressButton {
-        
-        left: 0%;
-    }
+  
     .certificate h2 {
        
         font-size: 28px;
@@ -1696,6 +1691,22 @@ padding: 16px;
     .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed {
         font-size: 16px;
     }
+    .progressBar2 {
+       
+        left: 10%;
+    }
+    .progressBar {
+       
+        left: 10%;
+        height: 100%;
+    }
+    .progressButton {
+      
+        left: 10%;
+    }
+    .lastbtn{
+        left: 12%;
+        }
 
 
 }
