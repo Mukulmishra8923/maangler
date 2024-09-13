@@ -928,7 +928,7 @@ text-align: left;
     margin-top: 60px;
 }
 .content2Parent{
-    /* position: relative; */
+    position: relative;
 }
 
 
@@ -1230,11 +1230,11 @@ border-radius: 30px 30px 30px 30px;
 .dropdown-content,.dropdown-content1 ,.dropdown-content2 {
     display: none; /* Initially hidden */
     padding: 10px;
-    background-color: #1f1f1f;
-    border-top: 1px solid #ccc;
+    background-color: black;
+    /* border-top: 1px solid #ccc; */
 }
 
-.dropdown-content ul {
+.dropdown-content ul ,.dropdown-content1 ul , .dropdown-content2 ul {
     list-style: none;
     padding: 0;
 }
@@ -1245,7 +1245,7 @@ border-radius: 30px 30px 30px 30px;
     line-height: 1.5;
 }
 
-.dropdown-content ul li::before {
+.dropdown-content ul li::before, .dropdown-content1 ul li::before, .dropdown-content2 ul li::before {
     content: "✔"; /* Checkmark symbol */
     margin-right: 10px;
     color: green;
@@ -1673,7 +1673,7 @@ padding: 16px;
 
     .progressButton {
         position: absolute;
-        left: 0%;
+        left: 2%;
         transform: translateX(-50%);
         max-width: 50px;
         z-index: 2000;
@@ -1814,7 +1814,7 @@ padding: 16px;
     }
     .progressButton {
       
-        left: 10%;
+        left: 12%;
     }
     .lastbtn{
         left: 12%;
