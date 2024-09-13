@@ -10,20 +10,35 @@ body{
     background-color: #000000;
 }
 
-.navbar{
-    background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
+nav .glow-on-hover {
+    padding: 18px 252px 18px 252px;
+    
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    /* background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
     max-width: 694px;
-padding: 14px 252px 14px 252px;
+
 gap: 10px;
 border-radius: 8px ;
 opacity: 0px;
 box-shadow: 6px 6px 12px 0px #78CAED52;
-text-align: center;
+text-align: center; */
 }
 .navbar {
-    position: relative; /* To position the close button relative to the navbar */
+    position: relative;
+    top: 0;
+   
 }
-
+nav{
+    position: sticky;
+    top: 20px;
+    z-index: 20000;
+}
 .close-btn {
     position: absolute;
     top: -8px;
@@ -35,10 +50,12 @@ text-align: center;
     color: #333; /* Customize color */
 }
 
-.close-btn:hover {
+/* .close-btn:hover {
     color: red; /* Hover effect */
-}
 
+.navParent:hover .close-btn {
+    color: red; /* Apply red color to the close button on hover of navParent */
+}
 
 .navParent{
     display: flex;
@@ -46,7 +63,7 @@ text-align: center;
     padding-bottom: 20px;
 }
 
-.navbar h2 a{
+.navParent h2 a{
     font-family: Manrope;
 font-size: 20px;
 font-weight: 700;
@@ -56,9 +73,7 @@ color: black;
 text-decoration: none;
 
 }
-.navbar h2 a:hover{
-    color: blue;
-}
+
 .heroLeft{
     max-width: 497px;
 }
@@ -163,8 +178,12 @@ text-align: center;
 margin: 40px 0px 20px 0px
 }
 .discountLink a{
-    text-decoration: none;
+    text-decoration: underline;
     color: #FFFFFF;
+}
+.discountLink a:hover{
+
+    color: rgb(68, 167, 224);
 }
 .ondoardedText{
 text-align: center;
@@ -341,15 +360,13 @@ text-align: center;
 .lineShadow{
     width: 410px;
 height: 2px;
-gap: 0px;
-border: 1px solid red;
-/* opacity: 0px; */
-border: 1px solid;
-border-image-source: radial-gradient(53708.1% 53978519.56% at 50% 55.73%, rgba(112, 180, 200, 0.8) 0%, rgba(185, 248, 211, 0) 100%);
-border-image-slice: 1;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(112, 180, 200, 0.4) 0%, rgba(185, 248, 211, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+    /* background: radial-gradient(50% 50% at 50% 50%, rgba(112, 180, 200, 0.8) 0%, rgba(185, 248, 211, 0.1) 60%, rgba(255, 255, 255, 0) 100%); */
 margin: 30px auto;
 
 }
+
+
 
 
 
@@ -929,7 +946,7 @@ text-align: left;
     margin-top: 60px;
 }
 .content2Parent{
-    position: relative;
+    /* position: relative; */
 }
 
 
@@ -1085,9 +1102,7 @@ line-height: 20px;
 max-width: max-content;
 
 }
-.certificateBtn a:hover {
-    color: blue;
-}
+
 
 .frequentlySection {
     padding: 95px;
@@ -1116,7 +1131,7 @@ border-radius: 16px;
 }
 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed {
     background: linear-gradient(91.74deg, rgba(95, 111, 50, 0.8) 16.87%, rgba(21, 83, 87, 0.8) 93.38%);
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 16px;
     padding: 26px 24px;
     color: white;
 
@@ -1131,7 +1146,7 @@ border-radius: 16px;
 }
 .accordion-header {
     background-color: black;
-    border-radius: 30px 30px 30px 30px ;
+    border-radius: 16px ;
 }
 .accordion-body {
     padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
@@ -1141,7 +1156,7 @@ border-radius: 16px;
 .accordion-flush>.accordion-item {
 border: 1px solid yellow;
 background-color: black;
-border-radius: 30px 30px 30px 30px;
+border-radius: 16px;
 }
 
 .show{
@@ -1155,13 +1170,13 @@ border-radius: 30px 30px 30px 30px;
     height: var(--bs-accordion-btn-icon-width);
     margin-left: auto;
     content: "";
-    background-image: url(/assets/image/accordionArrow.svg);
+    background-image: url(../image/accordionArrow.svg);
     background-repeat: no-repeat;
     background-size: var(--bs-accordion-btn-icon-width);
     transition: var(--bs-accordion-btn-icon-transition);
 }
 .accordion-button:not(.collapsed)::after {
-    background-image: url(/assets/image/accordionArrow.svg);
+    background-image: url(../image/accordionArrow.svg);
     transform: var(--bs-accordion-btn-icon-transform);
 }
 
@@ -1278,13 +1293,19 @@ line-height: 22px;
 text-align: center;
 
 }
-.footerData h3{
+.footerData h3 a{
+    text-decoration: none;
 color: #fff;
 font-family: Manrope;
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
 
+}
+
+.footerData a:hover{
+  border-bottom: 1px solid rgb(68, 167, 224);
+    color: rgb(68, 167, 224);
 }
 .footerData p{
     color: #FFF;
@@ -1302,8 +1323,6 @@ padding: 16px;
 }
 
 .glow-on-hover {
-    width: 220px;
-    height: 50px;
     border: none;
     outline: none;
     color: black;
@@ -1319,11 +1338,7 @@ padding: 16px;
 
 .glow-on-hover:before {
     content: '';
-    /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
-    background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
-    /* background-image: linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%); */
-
-    
+    background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%); 
     position: absolute;
     top: -2px;
     left:-2px;
@@ -1532,9 +1547,7 @@ padding: 16px;
         padding: 14px 50px;
        
     }
-    .certificateBtn a:hover {
-        color: blue;
-    }
+  
 
     .certificateLeft {
         margin: auto;
@@ -1674,10 +1687,13 @@ padding: 16px;
 
     .progressButton {
         position: absolute;
-        left: 2%;
+        left: 0%;
         transform: translateX(-50%);
         max-width: 50px;
         z-index: 2000;
+    }
+    .lastcard{
+        position: relative;
     }
     .lastbtn{
         left: 2%;
@@ -1815,7 +1831,7 @@ padding: 16px;
     }
     .progressButton {
       
-        left: 12%;
+        left: 10%;
     }
     .lastbtn{
         left: 12%;

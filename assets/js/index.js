@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Add the animation class when the element is in view
                 appSection.classList.add('animate');
                 applicationTabs.forEach((tab, index) => {
-                    tab.style.animationDelay = `${0.9 + index * 0.9}s`;
+                    tab.style.animationDelay = `${0.3 + index * 0.3}s`;
                     tab.classList.add('animate');
                 });
                 observer.unobserve(entry.target); // Stop observing once the animation has been triggered
