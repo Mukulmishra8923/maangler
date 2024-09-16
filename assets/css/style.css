@@ -175,16 +175,29 @@ text-decoration: none;
 }
 .discountLink{
 text-align: center;
-margin: 40px 0px 20px 0px
+margin: 40px 0px 20px 0px ;
+padding: 28px 122px;
 }
 .discountLink a{
     text-decoration: underline;
     color: #FFFFFF;
 }
-.discountLink a:hover{
-
-    color: rgb(68, 167, 224);
+.discountLink:hover{
+    /* padding: 20px 100px; */
+    transition: all 0.3s ease;
+    background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
+    border-radius: 12px;
 }
+.discountLink:hover a{
+   color: black;
+}
+/* .discountLink a:hover{
+  
+   transition: all 0.3s ease;
+   border-radius: 10px;
+   background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
+    color: rgb(0, 0, 0);
+} */
 .ondoardedText{
 text-align: center;
 color: #CECFD2;
@@ -1435,7 +1448,12 @@ padding: 16px;
 
 
 @media (max-width: 1024px) {
-   
+    .navbar{
+        justify-content: center;
+    }
+    nav .glow-on-hover {
+        padding: 18px 200px 18px 200px;
+    }
     .programSection, .learningSection, .careerHeading, .aiSection, .communitySection, .workSection, .endProgramSection, .meetupSection, .Bonus, .journeySection, .pricingSection, .certificateSection {
         margin: 30px auto;
     }
@@ -1443,8 +1461,8 @@ padding: 16px;
         padding: 30px 96px;
     }
     .navbar {
-        padding: 14px 170px 14px 170px;
-        max-width: 550px;
+        /* padding: 14px 170px 14px 170px; */
+        /* max-width: 650px; */
     }
     .navParent{
         padding-bottom: 0px;
@@ -1632,6 +1650,9 @@ padding: 16px;
 
 
 @media (max-width: 767px) {
+    nav .glow-on-hover {
+        padding: 18px 150px 18px 150px;
+    }
     .rotation {
         margin-top: 170px;
     }
@@ -1705,7 +1726,14 @@ padding: 16px;
 
 
 @media (max-width: 580px) {
-    .navbar {
+    .discountLink:hover{
+        /* padding: 20px 100px; */
+        padding: auto;
+        transition: all 0.3s ease;
+        background: linear-gradient(90.92deg, #FFE883 0%, #66BAFF 98.89%);
+        border-radius: 12px;
+    }
+    /* .navbar {
         
         max-width: 504px;
         padding: 14px 100px 14px 100px;
@@ -1714,6 +1742,9 @@ padding: 16px;
         opacity: 0px;
         box-shadow: 6px 6px 12px 0px #78CAED52;
         text-align: center;
+    } */
+    nav .glow-on-hover {
+        padding: 18px 100px 18px 100px;
     }
     .close-btn {
         top: -13px;
@@ -1840,15 +1871,30 @@ padding: 16px;
 
 }
 
+@media (max-width: 502px) {
 
+    .discountLink{
+        padding: unset;
+        
+     }
+     .discountLink:hover{
+        width: 100%;
+        background-color: #236B7A;
+        padding: 28px 0px;
+     } 
+    
+}
 
+@media (max-width: 455px) {
+ 
+}
 
 @media (max-width: 430px) {
-    .navbar {
+    /* .navbar {
        
         padding: 14px 80px 14px 80px;
         gap: 10px;
-    }
+    } */
     .navbar h2 a {
         font-family: Manrope;
         font-size: 18px;
@@ -1884,11 +1930,21 @@ padding: 16px;
       
         gap: 5px;
     }
-   
-    .navbar {
-        max-width: 504px;
-        padding: 14px 60px 14px 60px;
+    .navbar{
+        display: unset;
+        width: 90%;
+        padding: unset;
     }
+    .navbar .close-btn{
+        padding: 25px;
+    }
+    nav .glow-on-hover {
+        padding: 17px 30px 18px 23px;
+    }
+    /* .navbar {
+        max-width: 100%;
+        padding: 14px 60px 14px 60px;
+    } */
     .heroRight .logo {
         padding: 0px;
     }
