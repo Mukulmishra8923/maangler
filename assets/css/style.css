@@ -1570,6 +1570,7 @@ padding: 16px;
     .certificateLeft {
         margin: auto;
         text-align: center;
+        align-items: center;
     }
     .certificateRight {
         margin: 40px auto;
