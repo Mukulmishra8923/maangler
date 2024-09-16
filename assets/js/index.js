@@ -96,7 +96,7 @@ $('.toolCarousel').owlCarousel({
     loop:true,
     margin:20,
     nav:false,
-    // autoplay: true,       // Enable auto-rotation
+    autoplay: true,       // Enable auto-rotation
     autoplayTimeout: 3000, // Time between each auto-rotate (in milliseconds)
     autoplayHoverPause: true, // Pause on mouse hover
     dots: false,          // Hide dots (pagination indicators)

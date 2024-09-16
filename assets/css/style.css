@@ -1396,6 +1396,10 @@ padding: 16px;
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+.toolCarousel .owl-item img {
+    width: unset;
+    margin: 0 auto;
+}
 
 
 
@@ -1475,6 +1479,7 @@ padding: 16px;
         flex-wrap: wrap;
       
     }
+   
     .app {
         
         max-width: 600px;
